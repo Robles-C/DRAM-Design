@@ -1,6 +1,6 @@
 # DRAM-Design
 
-This work is part of a final project for the course Digital Electronics (ECE442) at CSUN. Below is the abstract of the paper <a href="https://github.com/Robles-C/DRAM-Design/blob/main/Comparative_Analysis_of_SRAM_DRAM.pdf">written</a> for the project.
+This work is part of a final project for the course Digital Electronics (ECE442) at CSUN. Below is the abstract of the <a href="https://github.com/Robles-C/DRAM-Design/blob/main/Comparative_Analysis_of_SRAM_DRAM.pdf">paper written</a> for the project.
 
 Abstract—This paper conducts a comparative analysis of
 SRAM and DRAM from a designer’s perspective, specifically
