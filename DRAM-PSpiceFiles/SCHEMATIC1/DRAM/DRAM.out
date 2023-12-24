@@ -1,0 +1,361 @@
+
+**** 12/06/23 17:04:07 ***** PSpice 22.1.0 (30 April 2023) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DRAM"  [ c:\cadence\dram-pspicefiles\schematic1\dram.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DRAM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../dram-pspicefiles/dram.lib" 
+* From [PSPICE NETLIST] section of C:\Users\zg790138\cdssetup\OrCAD_PSpice\22.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DRAM
+M_M5         N00376 N00332 N00227 N00227 pmos018  
++ L=.18um  
++ W=.464692907um         
+V_V1         N00376 0 1.8Vdc
+V_V2         N00414 0  
++PULSE 0V 1.8V 5u 1u 1u 20us 40us
+V_V3         N02611 0 .9Vdc
+V_V4         N19680 0  
++PULSE 0V 1.8V 5u 1u 1u 20us 40us
+C_C3         0 N00954  10n  TC=0,0 
+C_C4         N00195 0  10n  TC=0,0 
+M_M15         N00195 N00414 N00954 N00954 nmos018  
++ L=.18um  
++ W=.18um         
+M_M16         N00954 N00414 N02611 N02611 nmos018  
++ L=.18um  
++ W=.18um         
+M_M17         N00195 N00414 N02611 N02611 nmos018  
++ L=.18um  
++ W=.18um         
+M_M18         N00954 N00195 N00243 N00243 nmos018  
++ L=.18um  
++ W=.18um         
+M_M19         N00195 N00954 N00243 N00243 nmos018  
++ L=.18um  
++ W=.18um         
+M_M20         N00332 N00414 0 0 nmos018  
++ L=.18um  
++ W=.18um         
+M_M21         N00243 N00414 0 0 nmos018  
++ L=.18um  
++ W=.18um         
+M_M22         N00954 N00195 N00227 N00227 pmos018  
++ L=.18um  
++ W=.464692907um         
+M_M23         N00332 N00414 N00376 N00376 pmos018  
++ L=.18um  
++ W=.464692907um         
+M_M24         N00195 N00954 N00227 N00227 pmos018  
++ L=.18um  
++ W=.464692907um         
+V_V5         N12873 0  
++PULSE 0V 1.8V 5u 1u 1u 20us 80us
+M_M26         N07659 N07635 0 0 nmos018  
++ L=.18um  
++ W=.18um         
+M_M25         N07659 N07635 N07605 N07605 pmos018  
++ L=.18um  
++ W=.464692907um         
+V_V6         N07605 0 1.8Vdc
+V_V7         N09318 0 1.8Vdc
+M_M29         N00954 N09318 N21420 0 nmos018           
+C_C5         N21420 0  1n IC=1.8V TC=0,0 
+M_M30         N12873 N12873 N07635 0 nmos018           
+M_M31         N00195 N09318 N24184 0 nmos018           
+C_C6         N24184 0  1n IC=0V TC=0,0 
+
+**** RESUMING DRAM.cir ****
+.END
+
+WARNING(ORPSIM-15223): Library file c:\cadence\dram-pspicefiles\dram.lib has changed since index file dram.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Tue Dec  5 14:07:08 2023 to Wed Dec  6 17:00:43 2023.
+
+INFO(ORPSIM-15422): Making new index file dram.ind for library file dram.lib.
+
+Index has 3 entries from 1 file(s).
+
+WARNING(ORPSIM-15235): Mosfet M_M5, model pmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M5, model pmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15236): Parameter XW in model pmos018 is invalid - Ignored
+
+WARNING(ORPSIM-15235): Mosfet M_M22, model pmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M22, model pmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M23, model pmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M23, model pmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M24, model pmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M24, model pmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M25, model pmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M25, model pmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M15, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M15, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M16, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M16, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M17, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M17, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M18, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M18, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M19, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M19, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M20, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M20, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M21, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M21, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M26, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M26, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M29, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M29, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M30, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M30, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M31, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M31, model nmos018: Ps = 0 is less than W
+
+INFO(ORPSIM-15454): Model pmos018: Using BSIM VERSION 3.1 or lower
+
+INFO(ORPSIM-15454): Model nmos018: Using BSIM VERSION 3.1 or lower
+
+**** 12/06/23 17:04:07 ***** PSpice 22.1.0 (30 April 2023) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DRAM"  [ c:\cadence\dram-pspicefiles\schematic1\dram.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               pmos018         nmos018         
+               PMOS            NMOS            
+  T_Measured   27              27            
+   T_Current   27              27            
+       LEVEL    7               7            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    -.370804         .366265     
+          KP  517.971600E-06  517.971600E-06 
+       GAMMA    0               0            
+      LAMBDA    0               0            
+         RSH    7.5             6.6          
+          IS    1.000000E-15    1.000000E-15 
+          JS  100.000000E-06  100.000000E-06 
+          PB     .844426         .8          
+        PBSW     .8              .8          
+          CJ    1.157423E-03  989.560900E-06 
+        CJSW  190.245600E-12  239.360800E-12 
+          MJ     .406393         .373689     
+        MJSW     .355079         .153789     
+        CGSO  652.000000E-12  806.000000E-12 
+        CGDO  652.000000E-12  806.000000E-12 
+        CGBO    1.000000E-12    1.000000E-12 
+         TOX    4.000000E-09    4.000000E-09 
+          XJ  100.000000E-09  100.000000E-09 
+       UCRIT   10.000000E+03   10.000000E+03 
+       DELTA     .01             .01         
+      DIOMOD    2               2            
+          K1     .589547         .580275     
+          K2     .023595        3.124029E-03 
+        LETA    0               0            
+        WETA    0               0            
+          U0  103.0478        265.1889       
+       XPART     .5              .5          
+        VTH0    -.370804         .366265     
+          K3    0               1.000000E-03 
+          W0    1.000000E-06  100.000000E-09 
+         NLX  151.720100E-09  176.615900E-09 
+        DVT0     .788509        1.231242     
+        DVT1     .256458         .384984     
+          UA    1.049312E-09   -1.506402E-09 
+          UB    2.545758E-21    2.489393E-18 
+          UC -100.000000E-12   56.218840E-12 
+        VSAT  164.511400E+03  101.793200E+03 
+        RDSW  306.579         136.5583       
+        VOFF    -.086701        -.094802     
+     NFACTOR    2               2.186007     
+        PCLM    1.328107         .660212     
+      PDIBL1    2.394169E-03     .160533     
+      PDIBL2   -3.255915E-06    3.287142E-03 
+       DROUT    0                .791781     
+      PSCBE1   48.819330E+09    6.420235E+09 
+      PSCBE2  500.000000E-12    4.122516E-09 
+          A0    1.627879        2            
+          A1     .444901        1.158074E-03 
+          A2     .3             1            
+       NPEAK  415.890000E+15  235.490000E+15 
+         LDD    0               0            
+        LITL   34.641020E-09   34.641020E-09 
+         UA1    4.310000E-09    4.310000E-09 
+         UB1   -7.610000E-18   -7.610000E-18 
+         UC1  -56.000000E-12  -56.000000E-12 
+        PVAG    2.093262         .034717     
+        KETA     .029616        -.012771     
+        ETA0    1.018318E-03    3.335516E-03 
+        ETAB -320.631900E-06   60.289750E-06 
+         K3B   13.8642          3.388687     
+        DVT2     .1              .016135     
+        DSUB    1.094521E-03     .021478     
+      MOBMOD    1               1            
+         AGS     .32955          .454312     
+       DVT1W    0               0            
+       DVT2W    0               0            
+        PRWG     .5              .5          
+        PRWB     .5             -.2          
+     PDIBLCB   -1.000000E-03    -.1          
+         DWG  -24.338890E-09   -4.211574E-09 
+         DWB  -93.464800E-12   11.077190E-09 
+          B0  520.769900E-09  343.348900E-09 
+          B1    1.370868E-06    5.000000E-06 
+        LINT   27.610330E-09   17.024150E-09 
+         DLC   27.610330E-09   17.024150E-09 
+         DWC    0               0            
+          CF    0               0            
+        NOIA    9.900000E+18  100.000000E+18 
+        NOIB    2.400000E+03   50.000000E+03 
+        NOIC    1.400000E-12   -1.400000E-12 
+       LKETA   -2.936093E-03   -3.255127E-03 
+       WKETA     .044298        1.601517E-03 
+       PVSAT  -50               1.686297E+03 
+       PKETA   -6.740436E-03   -2.039532E-03 
+       PVTH0    1.439800E-03   -1.731630E-03 
+         PUA  -43.452900E-12    1.584315E-12 
+         PUB    1.000000E-21  744.614200E-27 
+         PU0    -.976962        5.202447     
+       PRDSW     .507341       -1.417355     
+       PETA0  100.276200E-06  100.159400E-06 
+         PK2    2.190431E-03    1.600729E-03 
+         VTM     .025864         .025864     
+     VERSION    3.1             3.1          
+       PBSWG     .8              .8          
+       MJSWG     .355079         .153789     
+       CJSWG  422.000000E-12  330.000000E-12 
+
+
+WARNING(ORPSIM-15235): Mosfet M_M5, model pmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M5, model pmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15236): Parameter XW in model pmos018 is invalid - Ignored
+
+WARNING(ORPSIM-15235): Mosfet M_M15, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M15, model nmos018: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M29, model nmos018: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M29, model nmos018: Ps = 0 is less than W
+
+**** 12/06/23 17:04:07 ***** PSpice 22.1.0 (30 April 2023) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DRAM"  [ c:\cadence\dram-pspicefiles\schematic1\dram.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00195)     .3161 (N00227)    1.2476 (N00243)     .3161 (N00332)    1.8000     
+
+(N00376)    1.8000 (N00414)    0.0000 (N00954)     .8818 (N02611)     .9000     
+
+(N07605)    1.8000 (N07635) 1.415E-18 (N07659)    1.8000 (N09318)    1.8000     
+
+(N12873)    0.0000 (N19680)    0.0000 (N21420)    1.8000 (N24184) 190.3E-09 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.887E-05
+    V_V2         0.000E+00
+    V_V3        -6.368E-05
+    V_V4         0.000E+00
+    V_V5        -1.267E-30
+    V_V6        -2.573E-11
+    V_V7         0.000E+00
+
+    TOTAL POWER DISSIPATION   9.13E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/06/23 17:04:07 ***** PSpice 22.1.0 (30 April 2023) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DRAM"  [ c:\cadence\dram-pspicefiles\schematic1\dram.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .50
+

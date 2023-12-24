@@ -1,0 +1,107 @@
+
+**** 12/05/23 15:49:36 ***** PSpice 22.1.0 (30 April 2023) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DRAM"  [ c:\cadence\dram-pspicefiles\schematic1\dram.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DRAM.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../dram-pspicefiles/dram.lib" 
+* From [PSPICE NETLIST] section of C:\Users\zg790138\cdssetup\OrCAD_PSpice\22.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DRAM
+M_M5         N00376 N00332 N00227 N00227 pmos018  
++ L=.18um  
++ W=.464692907um         
+V_V1         N00376 0 1.8Vdc
+V_V2         N00414 0  
++PULSE 0V 1.8V 5u 1u 1u 20us 40us
+C_C2         N02253 0  30p IC=.9V TC=0,0 
+M_M9         N00954 N02432 N02253 N02253 nmos018  
++ L=.18um  
++ W=.18um         
+V_V3         N02611 0 .9Vdc
+V_V4         N02432 0  
++PULSE 0V 1.8V 5u 1u 1u 20us 40us
+C_C3         0 N00954  100p  TC=0,0 
+C_C4         N00195 0  100p  TC=0,0 
+M_M15         N00195 N00414 N00954 N00954 nmos018  
++ L=.18um  
++ W=.18um         
+M_M16         N00954 N00414 N02611 N02611 nmos018  
++ L=.18um  
++ W=.18um         
+M_M17         N00195 N00414 N02611 N02611 nmos018  
++ L=.18um  
++ W=.18um         
+M_M18         N00954 N00195 N00243 N00243 nmos018  
++ L=.18um  
++ W=.18um         
+M_M19         N00195 N00954 N00243 N00243 nmos018  
++ L=.18um  
++ W=.18um         
+M_M20         N00332 N00414 0 0 nmos018  
++ L=.18um  
++ W=.18um         
+M_M21         N00243 N00414 0 0 nmos018  
++ L=.18um  
++ W=.18um         
+M_M22         N00954 N00195 N00227 N00227 pmos018  
++ L=.18um  
++ W=.464692907um         
+M_M23         N00332 N00414 N00376 N00376 pmos018  
++ L=.18um  
++ W=.464692907um         
+M_M24         N00195 N00954 N00227 N00227 pmos018  
++ L=.18um  
++ W=.464692907um         
+V_V5         N12873 0  
++PULSE 0V 1.8V 5u 1u 1u 20us 80us
+M_M27         N02253 N02432 N00195 N00195 nmos018  
++ L=.18um  
++ W=.18um         
+M_M28         N12873 N12873 N17226 N17226 nmos018  
++ L=.18um  
++ W=.18um         
+M_M30         N18612 N18554 N18622 N18622 nmos018  
++ L=.18um  
++ W=.18um         
+C_C5         N18612 0  30p IC=.9V TC=0,0 
+M_M29         N18612 N18554 N18606 N18606 nmos018  
++ L=.18um  
++ W=.18um         
+C_C6         0 N18622  100p IC=.9V TC=0,0 
+C_C7         N18606 0  100p IC=.9V TC=0,0 
+V_V7         N18554 0 1.8Vdc
+
+**** RESUMING DRAM.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N18612 is floating
+
+ERROR(ORPSIM-15142): Node N18622 is floating
+
+ERROR(ORPSIM-15142): Node N18606 is floating
+

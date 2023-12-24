@@ -1,0 +1,57 @@
+* source DRAM
+M_M5         N00376 N00332 N00227 N00227 pmos018  
++ L=.18um  
++ W=.464692907um         
+V_V1         N00376 0 1.8Vdc
+V_V2         N00414 0  
++PULSE 0V 1.8V 5u 1u 1u 20us 40us
+V_V3         N02611 0 .9Vdc
+V_V4         N19680 0  
++PULSE 0V 1.8V 5u 1u 1u 20us 40us
+C_C3         0 N00954  10n  TC=0,0 
+C_C4         N00195 0  10n  TC=0,0 
+M_M15         N00195 N00414 N00954 N00954 nmos018  
++ L=.18um  
++ W=.18um         
+M_M16         N00954 N00414 N02611 N02611 nmos018  
++ L=.18um  
++ W=.18um         
+M_M17         N00195 N00414 N02611 N02611 nmos018  
++ L=.18um  
++ W=.18um         
+M_M18         N00954 N00195 N00243 N00243 nmos018  
++ L=.18um  
++ W=.18um         
+M_M19         N00195 N00954 N00243 N00243 nmos018  
++ L=.18um  
++ W=.18um         
+M_M20         N00332 N00414 0 0 nmos018  
++ L=.18um  
++ W=.18um         
+M_M21         N00243 N00414 0 0 nmos018  
++ L=.18um  
++ W=.18um         
+M_M22         N00954 N00195 N00227 N00227 pmos018  
++ L=.18um  
++ W=.464692907um         
+M_M23         N00332 N00414 N00376 N00376 pmos018  
++ L=.18um  
++ W=.464692907um         
+M_M24         N00195 N00954 N00227 N00227 pmos018  
++ L=.18um  
++ W=.464692907um         
+V_V5         N12873 0  
++PULSE 0V 1.8V 5u 1u 1u 20us 80us
+M_M26         N07659 N07635 0 0 nmos018  
++ L=.18um  
++ W=.18um         
+M_M25         N07659 N07635 N07605 N07605 pmos018  
++ L=.18um  
++ W=.464692907um         
+V_V6         N07605 0 1.8Vdc
+V_V7         N09318 0 1.8Vdc
+M_M29         N00954 N09318 N21420 0 nmos018           
+C_C5         N21420 0  1n IC=1.8V TC=0,0 
+M_M30         N12873 N12873 N07635 0 nmos018           
+M_M31         N00195 N09318 N24184 0 nmos018           
+C_C6         N24184 0  1n IC=0V TC=0,0 
